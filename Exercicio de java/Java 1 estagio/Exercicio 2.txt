@@ -1,0 +1,48 @@
+
+package exercicio2;
+
+import java.util.Scanner;
+
+public class Exercicio2 {
+
+    
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        
+        int contadorM = 0;
+        int contadorF = 0;
+        int contadorI = 0;
+        int i;
+        int voto;
+        
+        for(i=0; i<20; i++)
+        {
+        do{    
+        System.out.println("Digite 1 se for homem e 2 se você for mulher!! ");
+        voto = entrada.nextInt();
+        
+        if (voto == 1)
+        {
+          contadorM++;
+        }
+        if(voto == 2 )
+        {
+          contadorF++;
+        }
+        if((voto!=1)&&(voto!=2))
+        {
+         System.out.println("Voto inválido digite o codigo certo ");
+         //Ele avisa ao usuario que o voto é invalido, porem não o computa como homem ou mulher.
+         contadorI++; 
+        }
+        
+        }while((voto!=1)&&(voto!=2));
+        
+        }
+        System.out.println("Quantidade de homens é " + contadorM);
+        System.out.println("Quantidade de mulheres é " + contadorF);
+        System.out.println("Tentativas de votos inválidos " + contadorI);
+         
+    }
+    
+}

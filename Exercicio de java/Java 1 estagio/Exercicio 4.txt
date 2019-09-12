@@ -1,0 +1,38 @@
+
+package exercicio.pkg4;
+
+import java.util.Scanner;
+
+public class Exercicio4 {
+
+    
+    
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        
+        double salario,emprestimo;
+    
+        do
+        {
+        System.out.println("Digite o valor do seu salário!! ");
+        salario = entrada.nextDouble(); 
+        
+        System.out.println("Digite o valor do seu emprestimo!! ");
+        emprestimo = entrada.nextDouble();
+        
+        if(emprestimo >=(5*salario))
+        {
+          System.out.println("Financeamento concedido!! ");  
+        }
+        else
+        {
+          System.out.println("Financeamento negado!! "); 
+          System.out.println("Obrigado por nos consultar!! "); 
+        }
+          
+        }while(emprestimo<(5*salario));
+        
+        System.out.println("Obrigado por nos consultar!! ");  
+    }
+    
+}

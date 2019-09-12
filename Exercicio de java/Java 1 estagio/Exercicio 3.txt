@@ -1,0 +1,40 @@
+
+package exercicio.pkg3;
+
+import java.util.Scanner;
+
+
+public class Exercicio3 {
+
+    
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        
+        double num1, num2;
+        int operacao;
+        
+        System.out.println("Digite seu primeiro número!! ");
+        num1 = entrada.nextDouble();
+        System.out.println("Digite seu Segundo número!! ");
+        num2 = entrada.nextDouble();
+        
+        System.out.println("Digite sua operação 1=adição ou 2=subtração. ");
+        operacao = entrada.nextInt();
+         
+        
+        switch (operacao) {
+            
+            case 1:
+                System.out.println("O resultado da sua soma é: "+ (num1+num2));
+                break;
+            case 2:
+                System.out.println("O resultado da sua subtração é: "+ (num1-num2));
+                break;
+            default:
+                System.out.println("Codigo de operação invalido!!");
+                break;   
+        }
+        
+    }
+    
+}
